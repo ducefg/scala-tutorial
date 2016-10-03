@@ -7,6 +7,7 @@ object SquareRoot {
     if (isGoodEnough2(guess, x)) guess
     else sqrtIter(improve(guess, x), x)           //> sqrtIter: (guess: Double, x: Double)Double
 
+	// cannot work with very small number and very large number
 	def isGoodEnough(guess: Double, x: Double) =
 		abs(guess * guess - x) < 0.001    //> isGoodEnough: (guess: Double, x: Double)Boolean
 		
